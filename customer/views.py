@@ -49,10 +49,3 @@ class CustomersViewset(ModelViewSet):
 
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
-
-    @action(methods=['get'], detail=False)
-    def get_customer_by_id(self):
-        """
-        Get one customer by ID
-        """
-        pass
