@@ -9,6 +9,7 @@ pillow = "*"
 django-filter = "*"
 drf-yasg = "*"
 djangorestframework = "*"
+pandas = "*"
 
 [dev-packages]
 
