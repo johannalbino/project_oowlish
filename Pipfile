@@ -10,6 +10,8 @@ django-filter = "*"
 drf-yasg = "*"
 djangorestframework = "*"
 pandas = "*"
+pre-commit = "*"
+flake8 = "*"
 
 [dev-packages]
 

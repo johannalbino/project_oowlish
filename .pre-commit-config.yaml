@@ -1,0 +1,20 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+-   repo: local
+    hooks:
+      -   id: pep8
+          name: valid-pep8
+          entry: flake8 .
+          'types': [python]
+          always_run: true
+          language: python
+          stages: [commit]
+default_language_version:
+    python: python3.8
+default_stages: [commit, push]
+fail_fast: true

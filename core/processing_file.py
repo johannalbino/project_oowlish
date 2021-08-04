@@ -55,4 +55,3 @@ def processing_file():
     new_data = parallel_process(100, file_data, get_data_gmaps, lambda x: [x])
     not_found_location = [not_f for not_f in new_data if not_f['latitude'] == 0 and not_f['longitude'] == 0]
     return new_data, not_found_location
-
